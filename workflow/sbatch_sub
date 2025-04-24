@@ -1,0 +1,1 @@
+snakemake -s snakefile --use-conda --executor cluster-generic --cluster-generic-submit-cmd 'sbatch --partition=skylake --account=def-hoomandv --time=1:00:00 --cpus-per-task=52 --mem=50G --output=../resources/Logs/Slurm/%j.out ' -j 2

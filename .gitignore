@@ -5,3 +5,4 @@ resources/Databases/*
 resources/Data/*
 results/*
 workflow/.snakemake
+workflow/.snakefile.swp
