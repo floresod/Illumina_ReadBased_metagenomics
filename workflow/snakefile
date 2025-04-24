@@ -112,7 +112,7 @@ rule kraken2_rr:
         output = "../resources/Outputs/kraken2_rawreads/{sample}.tsv", 
         report = "../results/kraken2_rawreads/{sample}.tsv"
     params:
-        k2db = "../resources/Databases/k2_standard_08gb_20240904/",   #### Ensure this directs to kraken database ####
+        k2db = "../resources/Databases/k2_standard_16gb_20240904/",   #### Ensure this directs to kraken database ####
         conf = 0.05
     log:
         "../resources/Logs/kraken2_rr/{sample}.log"
@@ -136,7 +136,7 @@ rule bracken_rr:
     output:
         bra_report = "../results/bracken/{sample}.tsv"
     params:
-        k2db = "../resources/Databases/k2_standard_08gb_20240904/",
+        k2db = "../resources/Databases/k2_standard_16gb_20240904/",
         reads_len = 150
     log:
         "../resources/Logs/bracken/{sample}.log"
